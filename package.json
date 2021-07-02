@@ -1,0 +1,8 @@
+{
+  "name": "codempire-react-native-template",
+  "version": "0.0.1",
+  "description": "Codempire React Native Template",
+  "repository": "git@github.com:codempireio/codempire-react-native-template.git",
+  "author": "Vladyslav Aleksieiev <vladyslav.aleksieiev@gmail.com>",
+  "license": "MIT"
+}
