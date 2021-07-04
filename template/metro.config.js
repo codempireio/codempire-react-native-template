@@ -1,3 +1,4 @@
+/* eslint-disable spellcheck/spell-checker */
 const { getDefaultConfig } = require('metro-config');
 
 module.exports = (async () => {

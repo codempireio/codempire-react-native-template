@@ -1,0 +1,19 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+GRAY='\033[1;30m'
+ERROR='\033[1;33m'
+NC='\033[0m'
+
+echo "${GRAY}$ Husky checking commit message...${NC}";
+
+cat $1 | while read line
+do 
+error_msg="${ERROR}Aborting commit. Your commit message is wrong named: \"$line\"${NC}"
+
+if ! [[ "$line" =~ ^(feature)|(bugfix)\/[a-z\-]+$ ]]; then
+  echo "$error_msg" >&2;
+  exit 1;
+fi
+done
+
