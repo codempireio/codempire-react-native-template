@@ -3,6 +3,8 @@ module.exports = {
   extends: '@react-native-community',
   plugins: ['spellcheck'],
   rules: {
+    'prettier/prettier': 0,
+    'comma-dangle': 0,
     'spellcheck/spell-checker': [
       1,
       {
@@ -21,6 +23,8 @@ module.exports = {
           'lang',
           'codempire',
           'redux',
+          'axios',
+          'typeof',
         ],
         skipIfMatch: ['http://[^s]*'],
         minLength: 3,
