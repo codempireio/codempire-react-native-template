@@ -1,6 +1,6 @@
 #!/bin/bash
 cd ${APPCENTER_SOURCE_DIRECTORY}
-echo "WELCOME=${WELCOME}" > .env
+echo "API_URL=${API_URL}" > .env
 
 echo "DONE APPCENTER"
 cat .env

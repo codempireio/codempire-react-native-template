@@ -20,6 +20,7 @@ module.exports = {
           'utils',
           'lang',
           'codempire',
+          'redux',
         ],
         skipIfMatch: ['http://[^s]*'],
         minLength: 3,

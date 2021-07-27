@@ -11,7 +11,7 @@ cat $1 | while read line
 do 
 error_msg="${ERROR}Aborting commit. Your commit message is wrong named: \"$line\"${NC}"
 
-if ! [[ "$line" =~ ^(feature)|(bugfix)\/[a-z\-]+$ ]]; then
+if ! [[ "$line" =~ ^(feature)|(bugfix)\/[a-z0-9\-]+$ ]]; then
   echo "$error_msg" >&2;
   exit 1;
 fi
